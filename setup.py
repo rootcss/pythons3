@@ -14,7 +14,7 @@ setup(
     keywords = ['S3', 'python', 'AWS'],
     url = 'https://github.com/rootcss/pythons3',
     packages=['pythons3'],
-    long_description=read('README'),
+    long_description=read('README.md'),
     classifiers=[
         'Intended Audience :: Developers',
         'Development Status :: 2 - Pre-Alpha',
