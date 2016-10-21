@@ -16,3 +16,9 @@ PythonS3().upload('my_file.csv')
 
 ###Uninstallation:
 `pip uninstall pythons3`
+
+###TODO:
+<ul>
+<li>Multithreading support for multiple files.</li>
+<li>Determine file size before uploading.</li>
+</ul>
