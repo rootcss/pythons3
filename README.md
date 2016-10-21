@@ -8,6 +8,16 @@ Define AWS_ACCESS_KEY_ID & AWS_SECRET_ACCESS_KEY within the code or environmenta
 from pythons3 import PythonS3
 PythonS3().upload('my_file.csv')
 ```
+or, because humans do typos!
+```
+from pythons3 import Pythons3
+Pythons3().upload('my_file.csv')
+```
+or, because some people have multiple use cases:
+```
+from pythons3 import PythonS3
+PythonS3(bucket_name="my-bucket-name", key="my_key").upload('my_file.csv')
+```
 
 ###Installation:
 `git clone https://github.com/rootcss/pythons3`
