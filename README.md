@@ -15,4 +15,4 @@ PythonS3().upload('my_file.csv')
 `python setup.py install`
 
 ###Uninstallation:
-`pip install pythons3`
+`pip uninstall pythons3`
