@@ -14,7 +14,7 @@ def percent_cb(complete, total):
 
 class PythonS3(object):
   bucket_name = re.sub('[^A-Za-z0-9]+', '-', gethostname())
-  key = 'shekahr_test_ey'
+  key = 'pythons3'
   conn = None
   bucket = None
 
