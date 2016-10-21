@@ -11,6 +11,7 @@ PythonS3().upload('my_file.csv')
 
 ###Installation:
 `git clone https://github.com/rootcss/pythons3`
+<br>
 `python setup.py install`
 
 ###Uninstallation:
