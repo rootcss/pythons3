@@ -1,8 +1,8 @@
-#pythons3
+# pythons3
 
 Fastest & Easiest way to upload data on AWS S3.
 
-###Usage:
+### Usage:
 Define AWS_ACCESS_KEY_ID & AWS_SECRET_ACCESS_KEY within the code or environmental variables and execute the following code:
 ```
 from pythons3 import PythonS3
@@ -19,15 +19,15 @@ from pythons3 import PythonS3
 PythonS3(bucket_name="my-bucket-name", key="my_key").upload('my_file.csv')
 ```
 
-###Installation:
+### Installation:
 `git clone https://github.com/rootcss/pythons3`
 <br>
 `python setup.py install`
 
-###Uninstallation:
+### Uninstallation:
 `pip uninstall pythons3`
 
-###TODO:
+### TODO:
 <ul>
 <li>Multithreading support for multiple files.</li>
 <li>Determine file size before uploading.</li>
