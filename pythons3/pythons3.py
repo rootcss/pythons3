@@ -18,16 +18,20 @@ class PythonS3(object):
   conn = None
   bucket = None
 
-  def __init__(self, bucket_name=None, key=None):
+  def __init__(self, bucket_name=None, key=None, path=None):
     if bucket_name is not None:
       self.bucket_name = bucket_name
+    if path is not None:
+      key = path
+    if key is not None:
+      self.key = key
     self.__connect()
 
   def upload(self, file):
     self.set_bucket()
-    print 'Uploading %s in bucket %s' % (file, self.bucket_name)
+    print 'Uploading %s in bucket %s/%s' % (file, self.bucket_name, self.key)
     k = Key(self.bucket)
-    k.key = file
+    k.key = self.key
     k.set_contents_from_filename(file, cb=percent_cb, num_cb=10)
 
   def set_bucket(self):
