@@ -20,7 +20,8 @@ PythonS3(bucket_name="my-bucket-name").upload('my_file.csv')
 # OR
 PythonS3(bucket_name="my-bucket-name", key="myfilename.csv").upload('my_file.csv')
 # OR
-PythonS3(bucket_name="my-bucket-name", path="directory/myfilename.csv").upload('my_file.csv') # This line will copy the file "my_file.csv" to "my-bucket-name/directory/myfilename.csv" in S3
+PythonS3(bucket_name="my-bucket-name", path="directory/myfilename.csv").upload('my_file.csv')
+# Above line will copy the file "my_file.csv" to "my-bucket-name/directory/myfilename.csv" in S3
 ```
 Note: `key` and `path` parameters are aliases.
 
