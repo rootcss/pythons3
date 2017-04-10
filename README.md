@@ -16,6 +16,8 @@ Pythons3().upload('my_file.csv')
 or, because some people have multiple use cases:
 ```
 from pythons3 import PythonS3
+PythonS3(bucket_name="my-bucket-name").upload('my_file.csv')
+# OR
 PythonS3(bucket_name="my-bucket-name", key="my_key").upload('my_file.csv')
 ```
 
